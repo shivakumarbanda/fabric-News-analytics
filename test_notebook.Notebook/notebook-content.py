@@ -21,3 +21,17 @@ print(spark.version)
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# CELL ********************
+
+data = [('shivakumar',26),('naveen',23)]
+schema = ('Name','Age')
+df = spark.createDataFrame(data,schema)
+df.show()
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
